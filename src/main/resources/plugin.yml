@@ -1,0 +1,57 @@
+name: stegisagt
+version: '${project.version}'
+main: de.twyco.stegisagt.Stegisagt
+api-version: 1.19
+authors: [Twyco]
+description: Plugin für stegi Sagt
+website: twyco.de
+load: STARTUP
+commands:
+  open:
+    permission: stegisagt.open
+    permission-message: You do not have permission!
+  set:
+    permission: stegisagt.set
+    permission-message: You do not have permission!
+  mod:
+    permission: stegisagt.mod
+    permission-message: You do not have permission!
+  start:
+    permission: stegisagt.start
+    permission-message: You do not have permission!
+  reset:
+    permission: stegisagt.reset
+    permission-message: You do not have permission!
+  revive:
+    permission: stegisagt.revive
+    permission-message: You do not have permission!
+  items:
+    permission: stegisagt.items
+    permission-message: You do not have permission!
+  rejoin:
+    permission: stegisagt.rejoin
+    permission-message: You do not have permission!
+  coinflip:
+    permission: stegisagt.coinflip
+    permission-message: You do not have permission!
+  fix:
+    permission: stegisagt.fix
+    permission-message: You do not have permission!
+  #minigame:
+  #  usage: "/game <game | stop | items> <lebende | tote | ausgewählte> ggf. <Max-Spieler-Anzahl> ggf. <zusätzliche Einstellung>"
+  #  permission: stegisagt.minigame
+  #  aliases:
+  #    - mini
+  #    - game
+  #    - mg
+  #  permission-message: You do not have permission!
+  discord:
+    aliases:
+      - dc
+  msg:
+    default: true
+    usage: "/msg <name> message"
+permissions:
+  stegisagt.*:
+    description: Wildcard permission
+    default: op
